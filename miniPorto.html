@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="miniPortoCSS.css">
+</head>
+<body class="mx-4 md:mx-0">
+    <header class="hidden px-8 md:flex justify-between items-center min-h-20 border-0 border-b-[1px] border-black/20">
+        <h1 class=" font-black">My Portoh</h1>
+
+        <nav>
+            <ul class="flex gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Study</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="flex gap-10 md:items-center md:justify-center">
+            <div class="md:p-10 p-2 md:pt-16 pt-10"> 
+                <p class="font-light text-black/60 md:text-base text-xs">HELLO</p>
+                <h1 class="font-bold md:text-6xl text-lg">Aku Indra</h1>
+                <p class="font-medium md:text-base text-xs">Mahasiswa Sistem Informasi</p>
+                <div class="w-fit border-2 border-yellow-300 mt-5">
+                    <p class="font-medium md:p-2 md:px-4 p-1 px-2 text-xs md:text-base">See More</p>
+                </div>
+            </div>
+    
+            <!-- dibawah ini kasih image -->
+             <div class="hidden md:block relative w-100 h-100">
+                 <img src="./assets/me-monkey.png" alt="Me" class="w-full h-full object-cover rounded-full bg-white">
+                 <div class="w-100 h-100 rounded-full border-8 border-yellow-300 -z-10 absolute inset-0 translate-x-5 translate-y-5"></div>
+
+             </div>
+        </div>
+    </section>
+
+    <section id="aboutMe">
+        <div class="flex gap-16 mt-20 justify-center items-center h-fit">
+            <div class="hidden md:block w-48 h-72 relative">
+                <!-- dibawah sini juga image -->
+                 <img src="./assets/mypict.png" alt="me" class="w-full h-full object-cover rounded-lg">
+                 <div class="absolute inset-0 -z-10 rounded-lg translate-x-2 translate-y-2 border-[3px] border-[#DB1514]"></div>
+            </div>
+    
+            <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-xl md:text-3xl">About Me</h1>
+                <p class="p-2 w-screen md:w-3xl text-justify">Saya adalah mahasiswa Sistem Informasi yang adaptif dan komunikatif, memiliki ketertarikan kuat dalam menjembatani kebutuhan teknis dengan pemahaman bisnis. Berbekal kemampuan komunikasi aktif dan keahlian kolaborasi tim, saya terbiasa beradaptasi secara cepat dalam lingkungan kerja yang dinamis serta mampu menyampaikan gagasan kompleks secara jelas. Kombinasi pengetahuan di bidang teknologi informasi dan soft skills yang solid mendorong saya untuk selalu siap memberikan kontribusi nyata dalam setiap proyek pengembangan sistem.</p>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <a href="#">
+                        <div class="bg-yellow-300 p-3 px-8 rounded-md">
+                            <p class="font-medium">Call Me</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="border-2 border-yellow-300 rounded-md px-8 p-3">
+                            <p class="font-medium">See Another Portoh</p>
+                        </div>                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="mt-20">
+            <form action="#" class="flex flex-col gap-4 items-center">
+                <h1 class="font-bold text-xl">Form Contact</h1>
+                <div class="flex flex-col gap-1">
+                    <label for="name" class="font-medium">Name</label>
+                    <input type="text" placeholder="Nama kamu?" class="w-screen md:w-96 h-8 border rounded px-2">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="deskripsi" class="font-medium">Deskripsi Diri</label>
+                    <textarea name="deskripsi" id="desc" class="w-screen md:w-96 h-20 border rounded px-2" placeholder="jelaskan diri kamu..."></textarea>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="umur" class="font-medium">Umur</label>
+                    <select name="umur" id="age" class="w-screen md:w-96 h-8 border rounded px-2">
+                        <option value="0-16"><17</option>
+                        <option value="17-25">17-25</option>
+                        <option value="26-80">>25</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-screen md:w-96 py-3 bg-yellow-300 font-medium rounded px-2">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section id="experience">
+        <div>
+            <h1>UX Research</h1>
+            <p>isi penjelasan singkat</p>
+        </div>
+
+        <div>
+            <h1>Web Development</h1>
+            <p>isi penjelasan singkat</p>
+        </div>
+    </section> -->
+
+    <!-- <section id="study">
+        <div>
+            <div>
+                <h1>Universitas Negeri Semarang</h1>
+                <h2>Sistem Informasi</h2>
+                #diisi jenjang pembelajaran 
+            </div>
+             #dibawah sini diisi image 
+        </div>
+        <div>
+            <div>
+                <h1>SMK Telkom Purwokerto</h1>
+                <h2>Teknik Komputer dan Jaringan</h2>
+                 #diisi jenjang pembelajaran 
+            </div>
+             #dibawah sini diisi image sekolah 
+        </div>
+    </section> -->
+</body>
+</html>
